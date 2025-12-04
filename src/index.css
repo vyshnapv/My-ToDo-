@@ -1,0 +1,136 @@
+/* ---------- Global Styles ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #aaaeb5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- App Container ---------- */
+.app {
+  width: 420px;
+  margin: 60px auto;
+  background: #8e8686;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 35px rgba(0,0,0,0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ---------- Title ---------- */
+.app h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Input Section ---------- */
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1.5px solid #d7d7d7;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+  background: #fafafa;
+}
+
+.todo-input input:focus {
+  border-color: #4a6cf7;
+  background: #ffffff;
+}
+
+.todo-input button {
+  padding: 12px 18px;
+  background: #99e699;
+  border: none;
+  color: Green;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.todo-input button:hover {
+  background:#86d586
+}
+
+/* ---------- Todo List Items ---------- */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f6f6;
+  padding: 4px;
+  border-radius: 12px;
+  margin-top: 12px;
+  border: 1px solid #e5e5e5;
+  transition: 0.25s ease;
+  border: 1.5px solid #d7d7d7;
+}
+
+.todo-item:hover {
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.07);
+  transform: translateY(-3px);
+}
+
+/* Completed Style */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ---------- Buttons ---------- */
+.buttons button {
+  margin-left: 8px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+/* EDIT → Soft Blue */
+.edit-btn {
+  background: #e8efff;
+  color: #3455d1;
+}
+
+.edit-btn:hover {
+  background: #cfdcff;
+}
+
+/* DELETE → Soft Red */
+.delete-btn {
+  background: #ffe6e6;
+  color: #d64545;
+}
+
+.delete-btn:hover {
+  background: #ffcccc;
+}
+
+/* COMPLETE → Soft Green */
+.complete-btn {
+  background: #e7f8e9;
+  color: #3fa34d;
+}
+
+.complete-btn:hover {
+  background: #d6f2db;
+}
+
+/* ---------- Smooth Fade Animation ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
